@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+
+
+        #head {
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: 200px;
+            /* border: 5px solid red; */
+            float: left;
+            position: relative;
+        }
+        #head>section>h2{
+            font-size: 60px;
+            text-align: center;
+        }
+        #head>section>h2:hover{
+        font-size: 70px;
+        color: #ff6600;
+        }
+        #head>section>h3{
+            font-size: 30px;
+            text-align: center;
+        }
+        .fix>img{
+            width: 100px;
+            height:100px;
+            position: fixed;
+            float: left;
+            margin-top: 30px;
+            margin-left: 40px;
+
+        }
+       
+        .color5 {
+            width: 70%;
+            height: 70px;
+            top:130px;
+            right:180px;
+            background-color: #040335;
+            float: left;
+            text-align: center;
+            position: absolute;
+            display: block;
+        }
+        .color5>span{
+            color: aliceblue;
+            font-size: 15px;
+            top: 10px;
+        
+        }
+        .color5>span:nth-of-type(1){
+            display: block;
+            width: 80px;
+            height: 40px;
+            position: absolute;
+            left: 20px;
+            top:20px;
+            opacity: 0.7;
+
+        }
+        .color5>span:nth-of-type(1):hover{
+          opacity: 1;
+
+       }
+        .color5>span:nth-of-type(2){
+            display: block;
+            width: 80px;
+            height: 40px;
+            position: absolute;
+            left: 210px;
+            top:20px;
+            opacity: 0.7;
+        }
+        .color5>span:nth-of-type(2):hover{
+           
+            opacity: 1;
+
+        }
+        .color5>span:nth-of-type(3){
+            display: block;
+            width: 80px;
+            height: 40px;
+            position: absolute;
+            left: 400px;
+            top:20px;
+            opacity: 0.7;
+        }
+        .color5>span:nth-of-type(3):hover{
+           
+           opacity: 1;
+
+       }
+
+        /* #head>section>:nth-last-of-type(1) {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #head>section>:nth-last-of-type(2) {
+            width: 80%;
+            height: 50px;
+            background-color: #040335;
+            position: absolute;
+            margin: auto;
+            top: 250px;
+            float: left;
+            z-index: 1;
+            display: block; */
+
+        
+
+        .para1>img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            transition: 1s;
+            opacity: 0.4;
+
+        }
+
+        .para1>img:hover {
+            opacity: 0.7;
+        }
+
+        .xep {
+            width: 25%;
+            height: 200px;
+            padding: 20px;
+            float: left;
+        }
+
+        .color1 {
+            background-color: #ff6600;
+        }
+
+        .color2 {
+            background-color: rgb(12, 3, 61);
+        }
+
+        .xep>h3 {
+            font-size: 30px;
+            color: blanchedalmond;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .xep>p {
+            font-size: 10px;
+            text-align: center;
+            color: aliceblue;
+            padding-top: 20px;
+        }
+
+        .form {
+            background-color: rgb(255, 255, 255);
+            display: inline;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+
+        }
+
+        .form>form>h2 {
+
+            padding: 40px;
+            color: #ff6600;
+            font-size: 40px;
+            display: block;
+        }
+
+        .form>form>h2:hover {
+            letter-spacing: 4px;
+            transition: 1s;
+        }
+        .color3 {
+            width: 50%;
+            height: 200px;
+            background-color: #ff6600;
+            padding: 40px;
+            float: left;
+        }
+        .color4 {
+            width: 50%;
+            height: 200px;
+            padding: 40px;
+            background-color: rgb(12, 3, 61);
+            float: left;
+        }
+        
+        .button{
+            background-color: #ff6600;
+            color: aliceblue;
+            padding:20px auto;
+            opacity: 0.7;
+            margin-bottom: 20px;
+        }
+        .button:hover{
+            scale: 2;
+            opacity: 1;
+        }
+        .color3>h3{
+            color: aliceblue;
+            text-align: center;
+            font-size: 30px;
+        }
+        .color4>h3{
+            color: rgb(200, 212, 223);
+            text-align: center;
+            font-size: 30px;
+        }
+        .color3>ul>li>a{
+            color:white ;
+            
+        }
+        .color3>ul>li>a:hover{
+            color: #040335;
+        }
+
+        .color4>p{
+        font-size: 20px;
+        color: bisque;
+        text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <section>
+        <header id="head">
+            <section>
+                <h2>Golnaz pet clinic</h2>
+                <h3>welcome to my website</h3>
+            </section>
+            <section class="color5">
+                <span>instagarm</span>
+                <span>facebook</span>
+                <span>twitter</span>
+
+            </section>
+            <section class="fix">
+                <img src="img/logo.png" alt="">
+            </section>
+
+        </header>
+
+        <Section>
+            <figure class="para1">
+                <img src="img/3.jpg" alt="">
+            </figure>
+        </Section>
+        <section>
+            <section class="color1 xep">
+                <h3>emergency</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dolores,
+                    repellat adipisci beatae odio maiores nisi soluta dolor excepturi optio.</p>
+            </section>
+            <section class="color2 xep">
+                <h3>visit</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Voluptatem veniam quibusdam voluptas voluptates nobis dicta sed assumenda sequi quos ullam!</p>
+            </section>
+            <section class="color1 xep">
+                <h3>medicien</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Maiores nemo enim neque necessitatibus suscipit. Molestiae magni unde nihil quaerat id!</p>
+            </section>
+            <section class="color2 xep">
+                <h3>surgery</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    facere cupiditate reiciendis quis commodi doloribus. Harum fuga aspernatur nobis ipsam.</p>
+            </section>
+        </section>
+        <section class="form">
+            <form action="#" method="get" autocapitalize="off">
+                <h2>Please enter your information</h2>
+                <div>
+                    <label for="para1">petname:</label>
+                    <input type="text" name="petname" id="para1" placeholder="petname" required><br><br>
+                    <label for="para2">password:</label>
+                    <input type="text" name="password" id="para2" placeholder="password" required><br><br>
+                    <label for="para3">Email:</label>
+                    <input type="email" name="gmail" id="para3" placeholder="@gmail.com" autocomplete="on"><br><br>
+                    <label for="para4">phone:</label>
+                    <input type="tel" name="phone" id="para4" placeholder="+9845664556" autocomplete="on"><br><br>
+                    <label for="para5">age:</label>
+                    <input type="text" name="age" id="para5" value="20"><br><br>
+                    <label for="para6">pet birthday:</label>
+                    <input type="datetime-local" name="birthday" id="para6"><br><br>
+
+
+                </div>
+                <h2>Please select your cat kind</h2>
+                <div>
+                    <label for="para7">domestic short hair:</label>
+                    <input type="checkbox" name="kind" id="para7" value="dsh" checked><br><br>
+                    <label for="para8">domestic long hair:</label>
+                    <input type="checkbox" name="kind" id="para8" value="dlh"><br><br>
+                    <label for="para9">persian:</label>
+                    <input type="checkbox" name="kind" id="para9" value="per"><br><br>
+                </div>
+                <h2>Please select your pet Gender</h2>
+                <div>
+                    <label for="para10">female</label>
+                    <input type="radio" name="gender" value="female" id="para10"><br><br>
+                    <label for="para11">male</label>
+                    <input type="radio" name="gender" value="male" id="para11"><br><br>
+                </div>
+                <button class="button">submit</button>
+            </form>
+            <section>
+                <section class="color3">
+                    <h3>links</h3>
+                    <ul>
+                        <li><a href="contact/contact.html">contact</a></li>
+                        <li><a href="gallery/gallery.html">gallery</a></li>
+                        <li><a href="address/address.html">address</a></li>
+
+                    </ul>
+                </section>
+                <section class="color4">
+                    <h3>about clinic</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Nostrum repudiandae sapiente quae ipsa, quas harum, expedita minus,
+                          distinctio delectus corrupti
+                         voluptate in reiciendis neque temporibus ab saepe? Illum, tempore necessitatibus?</p>
+                </section>
+            </section>
+            <Section>
+                <figure class="para1">
+                    <img src="img/6.jpg" alt="">
+                </figure>
+            </Section>
+
+
+        </section>
+    </section>
+</body>
+
+</html>
